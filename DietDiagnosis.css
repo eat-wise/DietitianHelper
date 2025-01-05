@@ -1,0 +1,190 @@
+@import url('style.css');
+
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* section styles */
+.container {
+  display: grid;
+  border-radius: 20px;
+}
+
+h1 {
+  grid-area: header;
+}
+
+h2 {
+  grid-area: header2;
+}
+
+.main1 {
+  grid-area: main1;
+}
+
+.main2selection {
+  grid-area: main2R;
+}
+
+.main2BloodTest {
+  grid-area: main2N;
+}
+
+.side {
+  grid-area: side;
+  margin-top: 30px;
+}
+
+.resume {
+  grid-area: resume;
+  text-align: center;
+}
+footer{
+  grid-area: footer;
+}
+#resetPage {
+  margin-right: 50px;
+}
+
+.main1,
+.main2selection,
+.main2BloodTest {
+  line-height: 2.1;
+}
+
+.main1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.itembox {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 5px;
+}
+.birthdate #birthYear{
+  width: 65px;
+}
+.birthdate #birthMonth{
+  width: 55px;
+}
+.birthdate #birthDay{
+  width: 45px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+}
+
+#resetPage:hover {
+  background-color: crimson;
+}
+
+input[type=text],
+input[type=number] {
+  width: 50%;
+  line-height: 20px;
+  height: 15px;
+  padding: 10px;
+}
+
+input {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: medium;
+}
+
+.main1 button {
+  width: 60%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.resume button {
+  width: 100px;
+  height: 40px;
+}
+
+button {
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+input[type=radio] {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 3px;
+}
+
+input[type=radio]:checked {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 3px;
+}
+
+@media (min-width: 1050px) {
+  .container {
+    height: 100%;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 50px 50px 340px 700px 40px;
+    grid-gap: 20px;
+    grid-template-areas:
+      "header header header"
+      "header2 header2 header2"
+      "main1 main2R main2N"
+      "side resume main2N"
+      "footer footer footer"
+  }
+
+}
+
+@media (max-width: 1050px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  h3 {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .main1 {
+    margin-bottom: 20px;
+  }
+
+  .side {
+    margin-bottom: 20px;
+  }
+
+  .main2selection {
+    margin-bottom: 20px;
+  }
+
+  .main2BloodTest {
+    margin-bottom: 20px;
+  }
+
+  .resume button {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+}
+
+/* table styles */
+
+table {
+  width: 100%;
+}
+
+#ObesityState {
+  font-weight: bold;
+}

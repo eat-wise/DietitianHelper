@@ -1,0 +1,137 @@
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #5a2f27;
+    background-size: cover;
+}
+
+/* header styles */
+
+h1,
+h2 {
+    font-family: 'Faster One', 'Jua', sans-serif, cursive;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* section styles */
+
+.container {
+    font-family: 'Poor Story', cursive;
+    background: beige;
+    border-radius: 20px;
+    font-size: large;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    font-family: none;
+    margin-top: auto;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: steelblue;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(0, 171, 132);
+    color: white;
+}
+
+table {
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,
+td {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .container {
+        min-width: 260px;
+        margin-right: 0px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 900px) {
+    .container {
+        max-width: 870px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1580px) {
+    .container {
+        max-width: 1500px;
+    }
+}
+@media (min-width: 1860px) {
+    .container {
+        max-width: 1800px;
+    }
+}
+/* @media (min-width: 2350px) {
+    .container {
+        max-width: 2300px;
+    }
+} */
+
+@media (min-width: 2500px) {
+    .container {
+        max-width: 2400px;
+    }
+}
