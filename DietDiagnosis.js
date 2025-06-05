@@ -97,7 +97,9 @@ function ObesityJudgement() {
   let birthmonth = parseInt($("#birthMonth").val());
   let birthday = parseInt($("#birthDay").val());
   let age = 0;
-  if (birthyear > 0) {
+  if (birthyear > 0 && birthyear < 200) {
+    age = birthyear;
+  } else if (birthyear > 1000) {
     age = nowyear - birthyear;
     if (birthmonth > 0) {
       if (nowmonth - birthmonth < 0) age--;
@@ -109,9 +111,6 @@ function ObesityJudgement() {
         age--;
     }
   }
-  // else{
-
-  // }
 
   Patient.sex = $("input[name=healthy_gender]:checked").val();
   if (Patient.sex == "male") {
