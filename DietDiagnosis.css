@@ -188,3 +188,63 @@ table {
 #ObesityState {
   font-weight: bold;
 }
+
+/* 추천 색상 팔레트 */
+:root {
+  --primary: #222831;      /* 진한 네이비 블랙 */
+  --secondary: #393E46;    /* 다크 그레이 */
+  --accent: #00ADB5;       /* 산뜻한 청록 */
+  --background: #E9F1FA;   /* 신뢰감 있는 옅은 블루 */
+  --surface: #FFFFFF;      /* 카드/폼 배경 - 화이트 */
+  --text: #111111;         /* 아주 진한 텍스트 */
+  --muted: #757575;        /* 보조 텍스트 */
+  --danger: #E53935;       /* 경고/리셋 버튼 등 */
+}
+
+/* 예시 적용 */
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+  background: var(--surface);
+  box-shadow: 0 2px 5px rgba(34,40,49,0.08);
+}
+
+h1, h2, h3, label, .center {
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+
+button:hover, #resetPage:hover {
+  background: var(--danger);
+}
+
+.side {
+  background: var(--surface);
+  color: var(--primary);
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.resume {
+  background: var(--surface);
+  color: var(--primary);
+  border-radius: 12px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
