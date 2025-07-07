@@ -1,5 +1,4 @@
-@import url('style.css');
-
+@import url("style.css");
 
 h2 {
   font-size: 1.5rem;
@@ -15,7 +14,7 @@ h1 {
   grid-area: header;
 }
 
-h2 {
+.subTitle {
   grid-area: header2;
 }
 
@@ -40,7 +39,7 @@ h2 {
   grid-area: resume;
   text-align: center;
 }
-footer{
+footer {
   grid-area: footer;
 }
 #resetPage {
@@ -59,18 +58,24 @@ footer{
   align-items: left;
 }
 
+.subTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
 .itembox {
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-bottom: 5px;
 }
-.birthdate #birthYear{
+.birthdate #birthYear {
   width: 65px;
 }
-.birthdate #birthMonth{
+.birthdate #birthMonth {
   width: 55px;
 }
-.birthdate #birthDay{
+.birthdate #birthDay {
   width: 45px;
 }
 .center {
@@ -83,8 +88,8 @@ footer{
   background-color: crimson;
 }
 
-input[type=text],
-input[type=number] {
+input[type="text"],
+input[type="number"] {
   width: 50%;
   line-height: 20px;
   height: 15px;
@@ -92,7 +97,7 @@ input[type=number] {
 }
 
 input {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-size: medium;
 }
 
@@ -114,14 +119,14 @@ button {
   border-radius: 10px;
 }
 
-input[type=radio] {
+input[type="radio"] {
   width: 18px;
   height: 18px;
   position: relative;
   top: 3px;
 }
 
-input[type=radio]:checked {
+input[type="radio"]:checked {
   width: 18px;
   height: 18px;
   position: relative;
@@ -139,9 +144,8 @@ input[type=radio]:checked {
       "header2 header2 header2"
       "main1 main2R main2N"
       "side resume main2N"
-      "footer footer footer"
+      "footer footer footer";
   }
-
 }
 
 @media (max-width: 1050px) {
@@ -151,7 +155,7 @@ input[type=radio]:checked {
     align-items: left;
   }
 
-  h3 {
+  h2 {
     font-weight: bold;
     text-align: center;
   }
@@ -176,7 +180,6 @@ input[type=radio]:checked {
     margin-top: 50px;
     margin-bottom: 20px;
   }
-
 }
 
 /* table styles */
@@ -191,33 +194,36 @@ table {
 
 /* 추천 색상 팔레트 */
 :root {
-  --primary: #222831;      /* 진한 네이비 블랙 */
-  --secondary: #393E46;    /* 다크 그레이 */
-  --accent: #00ADB5;       /* 산뜻한 청록 */
-  --background: #E9F1FA;   /* 신뢰감 있는 옅은 블루 */
-  --surface: #FFFFFF;      /* 카드/폼 배경 - 화이트 */
-  --text: #111111;         /* 아주 진한 텍스트 */
-  --muted: #757575;        /* 보조 텍스트 */
-  --danger: #E53935;       /* 경고/리셋 버튼 등 */
+  --primary: #222831; /* 진한 네이비 블랙 */
+  --secondary: #393e46; /* 다크 그레이 */
+  --accent: #00adb5; /* 산뜻한 청록 */
+  --background: #e9f1fa; /* 신뢰감 있는 옅은 블루 */
+  --surface: #ffffff; /* 카드/폼 배경 - 화이트 */
+  --text: #111111; /* 아주 진한 텍스트 */
+  --muted: #757575; /* 보조 텍스트 */
+  --danger: #e53935; /* 경고/리셋 버튼 등 */
 }
 
 /* 예시 적용 */
 body {
   background: var(--background);
   color: var(--text);
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .container {
   background: var(--surface);
-  box-shadow: 0 2px 5px rgba(34,40,49,0.08);
+  box-shadow: 0 2px 5px rgba(34, 40, 49, 0.08);
 }
 
-h1, h2, h3, label, .center {
+h1,
+h2,
+.subTitle,
+label,
+.center {
   color: var(--primary);
   letter-spacing: 0.5px;
 }
-
 
 button {
   background: var(--accent);
@@ -227,7 +233,8 @@ button {
   transition: background 0.2s;
 }
 
-button:hover, #resetPage:hover {
+button:hover,
+#resetPage:hover {
   background: var(--danger);
 }
 
