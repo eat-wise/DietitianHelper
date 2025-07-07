@@ -1,128 +1,146 @@
 html {
-    font-size: 1rem;
+  font-size: 1rem;
+}
+
+:root {
+  --primary: #222e50; /* 진한 네이비블루 (신뢰, 전문성) */
+  --secondary: #3a506b; /* 다크 블루그레이 */
+  --accent: #00b4d8; /* 산뜻한 청록 (포인트) */
+  --background: #e9f1fa; /* 옅은 블루 (전체 배경) */
+  --surface: #ffffff; /* 카드/컨테이너 배경 */
+  --border: #dbeafe; /* 연한 블루그레이 (구분선) */
+  --text: #222831; /* 메인 텍스트 */
+  --muted: #757575; /* 보조 텍스트 */
 }
 
 body {
-    background-color: #5a2f27;
-    background-size: cover;
+  background-color: var(--background); /* 신뢰감 있는 옅은 블루 */
+  background-size: cover;
+  color: var(--text);
 }
 
 /* header styles */
 
 h1,
 h2 {
-    font-family: 'Faster One', 'Jua', sans-serif, cursive;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
+  font-family: "Faster One", "Jua", sans-serif, cursive;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary);
 }
 
 h1 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* section styles */
 
 .container {
-    font-family: 'Poor Story', cursive;
-    background: beige;
-    border-radius: 20px;
-    font-size: large;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  background: var(--surface); /* 카드/컨테이너 배경 */
+  border-radius: 20px;
+  font-family: "Poor Story", cursive;
+  font-size: large;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 2px 5px rgba(34, 46, 80, 0.08); /* 은은한 그림자 */
 }
 
 footer {
-    font-family: none;
-    margin-top: auto;
-    text-align: center;
-    background-color: aquamarine;
-    border-radius: 10px;
-    font-size: 1rem;
+  font-family: none;
+  margin-top: auto;
+  text-align: center;
+  background-color: var(--surface);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--primary);
+  border-top: 1px solid var(--border);
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 button {
-    background-color: steelblue;
-    color: white;
-    border-radius: 10px;
+  background-color: var(--accent);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  transition: background 0.2s;
 }
 
 button:hover {
-    background-color: rgb(0, 171, 132);
-    color: white;
+  background-color: var(--secondary);
+  color: #fff;
 }
 
 table {
-    border-top: 1px solid #444444;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th,
 td {
-    border-bottom: 1px solid #444444;
-    padding: 10px;
-    text-align: center;
+  border-bottom: 1px solid #444444;
+  padding: 10px;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
-    .container {
-        min-width: 260px;
-        margin-right: 0px;
-    }
+  .container {
+    min-width: 260px;
+    margin-right: 0px;
+  }
 }
 @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 }
 @media (min-width: 900px) {
-    .container {
-        max-width: 870px;
-    }
+  .container {
+    max-width: 870px;
+  }
 }
 
 @media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
+  .container {
+    max-width: 1140px;
+  }
 }
 
 @media (min-width: 1580px) {
-    .container {
-        max-width: 1500px;
-    }
+  .container {
+    max-width: 1500px;
+  }
 }
 @media (min-width: 1860px) {
-    .container {
-        max-width: 1800px;
-    }
+  .container {
+    max-width: 1800px;
+  }
 }
 /* @media (min-width: 2350px) {
     .container {
@@ -131,7 +149,7 @@ td {
 } */
 
 @media (min-width: 2500px) {
-    .container {
-        max-width: 2400px;
-    }
+  .container {
+    max-width: 2400px;
+  }
 }
