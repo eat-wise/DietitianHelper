@@ -1,37 +1,25 @@
 ## Welcome to DietitianHelper Github page
+# DietitianHelper
 
-You can use the [editor on GitHub](https://github.com/Katharsis-cocktail/DietitionHelper.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+> AI-Powered Nutrition Assistant
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Experience personalized diet planning at its finest with our cutting-edge web application. Leveraging state-of-the-art artificial intelligence, DietitianHelper delivers tailored meal recommendations and nutritional insights, empowering you to reach your health goals.
 
-### Markdown
+## 🌟 Features
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* **AI-Driven Meal Plans**: Generate customized meal suggestions based on your preferences and targets.
+* **Nutritional Analytics**: Get detailed macro- and micronutrient breakdowns instantly.
+* **Intuitive Interface**: Sleek, responsive design for a seamless user experience.
 
-```markdown
-Syntax highlighted code block
+## 🚀 Live Demo
 
-# Header 1
-## Header 2
-### Header 3
+Explore the app now: [DietitianHelper](http://dietitianhelper-env.eba-nub38ipp.ap-northeast-2.elasticbeanstalk.com/)
 
-- Bulleted
-- List
+---
 
-1. Numbered
-2. List
+> **⚠️ Budget Notice**
+> This service runs on a limited maintenance budget. If resources are exhausted, the application may be temporarily unavailable.
 
-**Bold** and _Italic_ and `Code` text
+---
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Katharsis-cocktail/DietitionHelper.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Stay healthy, stay informed, and let AI guide your journey!
